@@ -25,14 +25,16 @@ body {
 
     .underline {
         border-bottom: 1px solid #3f484c;
-        padding: 0 0.5em;
+        width: 380px;
+        max-width: 100%;
+        display: inline-block;
+        margin-bottom: 0.3em;
     }
 
     .lead {
         color: #111619;
         text-align: center;
         font-size: 2em;
-        margin-top: -0.2em;
         text-shadow: 1px 1px 1px #f3f3f3;
     }
 }
