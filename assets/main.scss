@@ -1,0 +1,37 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+    background: #f1f1f1;
+}
+
+.hero-image {
+    height: 500px;
+    background: url('images/horizon.png');
+    background-size: cover;
+    background-position: 50% 60%;
+    
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #111619;
+        font-size: 5.9em;
+        text-align: center;
+        margin: 0;
+        text-shadow: 1px 1px 1px #f3f3f3;
+    }
+
+    .underline {
+        border-bottom: 1px solid #3f484c;
+        padding: 0 0.5em;
+    }
+
+    .lead {
+        color: #111619;
+        text-align: center;
+        font-size: 2em;
+        margin-top: -0.2em;
+        text-shadow: 1px 1px 1px #f3f3f3;
+    }
+}
