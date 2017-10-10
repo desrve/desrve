@@ -5,6 +5,7 @@
 
 body {
     background: #f1f1f1;
+    color: #656565;
 }
 
 .hero-image {
@@ -38,8 +39,14 @@ body {
 
 .main-content {
     margin-top: 2em;
+    margin-bottom: 200px;
 }
 
 .instagram-media {
     margin: auto !important;
+}
+
+.footer {
+    background: #fff;
+    padding: 1em 0;
 }
