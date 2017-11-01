@@ -89,3 +89,24 @@ body {
 ul, ol {
     margin: 0;
 }
+
+.ig-image {
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 2em;
+    background: #ffffff;
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+
+    img {
+        border-radius: 2px;
+        padding-bottom: 1em;
+        width: 100%;
+    }
+
+    a {
+        color: #272727 !important;
+    }
+}
