@@ -4,81 +4,35 @@
 {% include head.html %}
 
 <body>
-    <script>
-        var result = fetch('http://51.254.122.45/ig/');
-        result.then(function (response) {
-            return response.json();
-        }).then(function (json) {
-            var igFeed = document.getElementById('ig-feed');
-            var latest = json.items.splice(0, 5);
-            latest.map(function(item) {
-                var imgDiv = document.createElement('div');
-                imgDiv.className = 'ig-image';
-                var link = document.createElement('a');
-                link.href = item.link;
-                link.target = '_blank';
-                var img = document.createElement('img');
-                img.src = item.images.low_resolution.url;
-                var caption = document.createElement('p');
-                caption.className = 'ig-caption';
-                caption.textContent = item.caption.text;
-                link.appendChild(img);
-                link.appendChild(caption);
-                imgDiv.appendChild(link);
-                igFeed.appendChild(imgDiv);
-            });
-        });
-    </script>
-    <div class="container">
-        <div class="hero-image">
-            <img src="{{ " assets/images/logo.png " }}" class="image-logo" />
-            <div class="wrapper">
-                <div class="grid social-media-links">
-                    <div class="col-4_sm-12_xs">
-                        <a href="https://www.youtube.com/channel/UC63EhLOZEzWW6hk-WbpqDzQ" target="_blank">
-                            <i class="fa fa-large fa-youtube" aria-hidden="true"></i> YouTube</a>
-                    </div>
-                    <div class="col-4_sm-12_xs">
-                        <a href="https://soundcloud.com/desrve" target="_blank">
-                            <i class="fa fa-soundcloud" aria-hidden="true"></i> SoundCloud</a>
-                    </div>
-                    <div class="col-4_sm-12_xs">
-                        <a href="https://www.instagram.com/desrve.me/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="grid">
-                <div class="col-3_md-2_sm-12">
-                    <ul class="navigation">
-                        <li>
-                            <a href="{{ site.url }}">
-                                <i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6_md-5_sm-12 content-cell">
-                    <h2>YouTube
-                        <a href="https://www.youtube.com/channel/UC63EhLOZEzWW6hk-WbpqDzQ" target="_blank">Desrve Official</a>
-                    </h2>
-                    <div class="video-wrapper">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dgI9jXTCyb8" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-3_md-5_sm-12 content-cell">
-                    <h2>Instagram
-                        <a href="https://www.instagram.com/desrve.me/" target="_blank">@desrve.me</a>
-                    </h2>
-                    <div id="ig-feed"></div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <span>Contact: hello at desrve.me</span>
-        </footer>
+  <div class="container">
+    <div class="card">
+      <div class="avatar">
+        <img src="assets/images/avatar.png" />
+      </div>
+      <h1>Desrve</h1>
+      <p>Follow me on social media</p>
+      <ul class="some-links">
+        <li>
+          <a href="https://www.youtube.com/channel/UC63EhLOZEzWW6hk-WbpqDzQ" target="_blank">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/desrve.me/" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://soundcloud.com/desrve" target="_blank">
+            <i class="fa fa-soundcloud"></i>
+          </a>
+        </li>
+      </ul>
+      <footer class="footer">
+        <span>Contact: hello at desrve.me</span>
+      </footer>
     </div>
+  </div>
 </body>
 
 </html>

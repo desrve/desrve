@@ -16,7 +16,5 @@
     "url": "https://github.com/desrve/desrve.github.io/issues"
   },
   "homepage": "https://github.com/desrve/desrve.github.io#readme",
-  "dependencies": {
-    "whatwg-fetch": "^2.0.3"
-  }
+  "dependencies": {}
 }
